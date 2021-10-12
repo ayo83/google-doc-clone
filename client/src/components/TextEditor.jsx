@@ -25,7 +25,7 @@ const TextEditor = () => {
     const [quill, setQuill] = useState();
 
     useEffect(() => {
-        const s = io('http://localhost:3008');
+        const s = io('https://cloud-doc-2.herokuapp.com');
         setSocket(s);
         return () => {
             s.disconnect()
